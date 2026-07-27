@@ -34,7 +34,7 @@
 - **Overall Recommendation:** REVISE
 
 ### Advisor Feedback Draft
-The CUAD-based contract triage pipeline is a high-value industrial use case with excellent potential for technical rigor. To ensure success within 12 weeks: first, pivot from fine-tuning from-scratch to utilizing pre-trained lightweight models (e.g., DistilRoBERTa) to reduce hardware overhead; second, constrain the scope by focusing on the 10 most impactful clause categories rather than the full 41. Please confirm these scoping constraints by our next touchpoint.
+The CUAD-based contract triage pipeline is a high-value industrial use case with excellent potential for technical rigor. To ensure success within the timeframe of the program, I suggest: (i) pivoting from fine-tuning from scratch to utilizing pre-trained lightweight models (e.g., DistilRoBERTa) to reduce hardware overhead demand; and (ii) constraining the scope by focusing on the 10 most impactful clause categories, and having the full 41 as a stretch goal.
 
 ---
 
