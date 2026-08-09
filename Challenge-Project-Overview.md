@@ -86,7 +86,21 @@ Use these milestones to guide your work. Your team will create a GitHub Projects
 ### Key Details
 - Real-world commercial contracts from the CUAD dataset (510 contracts, 41 expert-annotated clause categories), raw text/PDF available.
 - Teams must implement strict preprocessing rules to handle document length variance and ensure text cleaning captures the necessary legal terminology for high-accuracy classification.
-- Initial clause detection is scoped to 10 of the 41 categories (see README), with full coverage as a stretch goal.
+- Initial clause detection is scoped to the 10 categories below, with full coverage as a stretch goal.
+
+### Focus Categories
+| Category | Contracts (of 510) | Share |
+|---|---|---|
+| Governing Law | 437 | 85.7% |
+| Anti-Assignment | 374 | 73.3% |
+| Cap On Liability | 275 | 53.9% |
+| License Grant | 255 | 50.0% |
+| Audit Rights | 214 | 42.0% |
+| Termination For Convenience | 183 | 35.9% |
+| Exclusivity | 180 | 35.3% |
+| Change Of Control | 121 | 23.7% |
+| Non-Compete | 119 | 23.3% |
+| Uncapped Liability | 111 | 21.8% |
 
 ---
 
