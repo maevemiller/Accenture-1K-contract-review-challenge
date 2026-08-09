@@ -66,7 +66,7 @@ Clause detection covers these **10** of CUAD's 41 clause categories:
 | 9 | Non-Compete |
 | 10 | Uncapped Liability |
 
-Full 41-category coverage is a stretch goal, not core scope. This list is pending confirmation at the first advisor meeting (week of Aug 24).
+Full 41-category coverage is a stretch goal, not core scope.
 
 ---
 
@@ -102,9 +102,9 @@ Full 41-category coverage is a stretch goal, not core scope. This list is pendin
 | Non-Compete | 119 | 23.3% |
 | Uncapped Liability | 111 | 21.8% |
 
-The 5 most frequent categories overall (Document Name, Parties, Agreement Date, Expiration Date, Effective Date — all 76–100% of contracts) were deliberately excluded: they're contract metadata, not risk clauses, so out of scope for risk scoring.
+Excluded: Document Name, Parties, Agreement Date, Expiration Date, Effective Date (76–100% of contracts, but contract metadata rather than risk clauses).
 
-**Preprocessing note:** to avoid the raw-PDF/token-alignment overhead CUAD is known for, this project treats detection as **per-category presence/absence classification** using `CUADv1.json`'s existing `answers`/`is_impossible` fields, rather than extracting exact token-level clause spans from raw PDF text. Token-level span extraction is a stretch goal, not core scope.
+**Preprocessing:** detection uses **per-category presence/absence classification** via `CUADv1.json`'s `answers`/`is_impossible` fields. Token-level span extraction is a stretch goal, not core scope.
 
 ---
 
@@ -116,7 +116,7 @@ The 5 most frequent categories overall (Document Name, Parties, Agreement Date, 
 * Feature selection and Hyperparameter tuning strategies
 * Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
 
-**DistilRoBERTa**, fine-tuned for multi-label classification across the 10 selected categories. A TF-IDF/keyword baseline is built first (see `notebooks/02_baseline_tfidf.ipynb`) to give the fine-tuned model something concrete to beat.
+**DistilRoBERTa**, fine-tuned for multi-label classification across the 10 selected categories. TF-IDF/keyword baseline: `notebooks/02_baseline_tfidf.ipynb`.
 
 
 ---
