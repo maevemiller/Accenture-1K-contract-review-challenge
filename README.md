@@ -83,29 +83,6 @@ Full 41-category coverage is a stretch goal, not core scope.
 
 * Plots, charts, heatmaps, feature visualizations, sample dataset images
 
-### Dataset: CUAD
-
-[CUAD](https://github.com/TheAtticusProject/cuad) (Contract Understanding Atticus Dataset) — 510 contracts, 41 expert-annotated clause categories, distributed as SQuAD-style QA JSON (`CUADv1.json`), not a flat CSV. Each category has a question per contract; a clause is "present" when the QA item has a non-empty `answers` list and `is_impossible: false`.
-
-**Per-category support, computed directly from `CUADv1.json`** (number of the 510 contracts containing each clause, for the 10 selected categories):
-
-| Category | Contracts | % of 510 |
-|---|---|---|
-| Governing Law | 437 | 85.7% |
-| Anti-Assignment | 374 | 73.3% |
-| Cap On Liability | 275 | 53.9% |
-| License Grant | 255 | 50.0% |
-| Audit Rights | 214 | 42.0% |
-| Termination For Convenience | 183 | 35.9% |
-| Exclusivity | 180 | 35.3% |
-| Change Of Control | 121 | 23.7% |
-| Non-Compete | 119 | 23.3% |
-| Uncapped Liability | 111 | 21.8% |
-
-Excluded: Document Name, Parties, Agreement Date, Expiration Date, Effective Date (76–100% of contracts, but contract metadata rather than risk clauses).
-
-**Preprocessing:** detection uses **per-category presence/absence classification** via `CUADv1.json`'s `answers`/`is_impossible` fields. Token-level span extraction is a stretch goal, not core scope.
-
 ---
 
 ## 🧠 **Model Development**
@@ -116,7 +93,7 @@ Excluded: Document Name, Parties, Agreement Date, Expiration Date, Effective Dat
 * Feature selection and Hyperparameter tuning strategies
 * Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
 
-**DistilRoBERTa**, fine-tuned for multi-label classification across the 10 selected categories. TF-IDF/keyword baseline: `notebooks/02_baseline_tfidf.ipynb`.
+**DistilRoBERTa**, fine-tuned for multi-label classification across the 10 selected categories.
 
 
 ---
