@@ -49,18 +49,22 @@
 - Your AI Studio host company and the project objective and scope
 - The real-world significance of the problem and the potential impact of your work
 
-Clause detection covers **10** of CUAD's 41 clause categories:
+### Selected Clause Categories
 
-1. Governing Law
-2. Anti-Assignment
-3. Cap On Liability
-4. License Grant
-5. Audit Rights
-6. Termination For Convenience
-7. Exclusivity
-8. Change Of Control
-9. Non-Compete
-10. Uncapped Liability
+Clause detection covers these **10** of CUAD's 41 clause categories:
+
+| # | Category |
+|---|---|
+| 1 | Governing Law |
+| 2 | Anti-Assignment |
+| 3 | Cap On Liability |
+| 4 | License Grant |
+| 5 | Audit Rights |
+| 6 | Termination For Convenience |
+| 7 | Exclusivity |
+| 8 | Change Of Control |
+| 9 | Non-Compete |
+| 10 | Uncapped Liability |
 
 Full 41-category coverage is a stretch goal, not core scope. This list is pending confirmation at the first advisor meeting (week of Aug 24).
 
