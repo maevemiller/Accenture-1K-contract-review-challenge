@@ -1,1 +1,5 @@
-
+# CUAD data files — see data/README.md for how to obtain these
+data/*.csv
+data/*.json
+data/full_contract_txt/
+data/CUAD_v1.zip
