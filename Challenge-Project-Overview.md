@@ -1,8 +1,8 @@
 # Contract Review Challenge
 
-**Company / Org:** Accenture
-**Challenge Advisor:** Adarsh Ravikumar, adarsh.ravikumar@accenture.com
-**Program:** Break Through Tech AI Studio - Fall 2026
+**Company / Org:** Accenture  
+**Challenge Advisor:** Adarsh Ravikumar, adarsh.ravikumar@accenture.com  
+**Program:** Break Through Tech AI Studio - Fall 2026  
 
 ---
 
@@ -38,10 +38,10 @@ Use these milestones to guide your work. Your team will create a GitHub Projects
 ---
 
 ## 📊 Dataset
-**Name and Source:** CUAD Dataset (Contract Understanding Atticus Dataset)
-**Format:** JSON, Raw Text/PDF
-**Size:** under 1gb
-**Location:** https://github.com/TheAtticusProject/cuad
+**Name and Source:** CUAD Dataset (Contract Understanding Atticus Dataset)  
+**Format:** JSON, Raw Text/PDF  
+**Size:** under 1gb  
+**Location:** https://github.com/TheAtticusProject/cuad  
 
 ### Key Details
 - Real-world commercial contracts from the CUAD dataset (510 contracts, 41 expert-annotated clause categories), raw text/PDF available.
@@ -51,9 +51,9 @@ Use these milestones to guide your work. Your team will create a GitHub Projects
 ---
 
 ## 🛠️ Suggested Approach
-**ML Problem Type:** NLP & Classification
-**Recommended Libraries:** HuggingFace Transformers, PyTorch/TensorFlow, Scikit-learn, Pandas
-**Modeling Approach:** Fine-tune a pre-trained lightweight transformer encoder (e.g., `distilroberta-base` or DistilBERT) rather than training from scratch — this keeps fine-tuning feasible within free-tier Google Colab memory/batch-size constraints while still giving strong multi-label classification performance.
+**ML Problem Type:** NLP & Classification  
+**Recommended Libraries:** HuggingFace Transformers, PyTorch/TensorFlow, Scikit-learn, Pandas  
+**Modeling Approach:** Fine-tune a pre-trained lightweight transformer encoder (e.g., `distilroberta-base` or DistilBERT) rather than training from scratch — this keeps fine-tuning feasible within free-tier Google Colab memory/batch-size constraints while still giving strong multi-label classification performance.  
 **Evaluation Metrics:** Precision, Recall, F1-Score for classification; Spearman Correlation for risk-ranking alignment.
 
 ---
