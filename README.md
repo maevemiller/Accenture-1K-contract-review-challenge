@@ -49,9 +49,7 @@
 - Your AI Studio host company and the project objective and scope
 - The real-world significance of the problem and the potential impact of your work
 
-### Scope decision (per Challenge Advisor feedback)
-
-Core clause-detection scope is narrowed from CUAD's full 41 clause categories to these **10**, chosen for a balance of real support in the data (see Data Exploration below) and legal-risk relevance:
+Clause detection covers **10** of CUAD's 41 clause categories:
 
 1. Governing Law
 2. Anti-Assignment
@@ -64,7 +62,7 @@ Core clause-detection scope is narrowed from CUAD's full 41 clause categories to
 9. Non-Compete
 10. Uncapped Liability
 
-Full 41-category coverage is a stretch goal, not core scope. This list is a data-informed draft pending confirmation with the Challenge Advisor at the first meeting (week of Aug 24).
+Full 41-category coverage is a stretch goal, not core scope. This list is pending confirmation at the first advisor meeting (week of Aug 24).
 
 ---
 
@@ -114,9 +112,7 @@ The 5 most frequent categories overall (Document Name, Parties, Agreement Date, 
 * Feature selection and Hyperparameter tuning strategies
 * Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
 
-### Model choice (per Challenge Advisor feedback)
-
-**DistilRoBERTa**, fine-tuned for multi-label classification across the 10 selected categories, per the advisor's guidance to favor a lightweight pre-trained model over a full-size transformer to keep hardware requirements manageable. A TF-IDF/keyword baseline is built first (see `notebooks/02_baseline_tfidf.ipynb`) to give the fine-tuned model something concrete to beat.
+**DistilRoBERTa**, fine-tuned for multi-label classification across the 10 selected categories. A TF-IDF/keyword baseline is built first (see `notebooks/02_baseline_tfidf.ipynb`) to give the fine-tuned model something concrete to beat.
 
 
 ---
